@@ -1,0 +1,21 @@
+Comandos por terminal
+1- se abrio terminal y se inicio node con npm init --yes
+2- instalar los modulos a utilizar 
+npm i express express-handlebars express-session method-override mongoose passport passport-local bcryptjs connect-flash
+express-handlebars = motor de platillas plantillas  extender el html
+express-session = crear sessiones en el servidor 
+method-override = extender la funcionalidad de los formularios utiizar PUT y DELETE
+mongoose = modulo para unir express con mongo 
+passport = autenticacion a la base de datos 
+bcryptjs = cifrado para textos
+connect-flash = enviar mensajes entre multiples vistas
+3- Luego de la configuracion del puerto inciamos node
+node .\src\index.js
+4- npm i nodemon -D (Modulo para reiniciar el servidor sin la necesidad de cancelar node)
+5- se cambio linea
+"scripts": {
+    "dev": "nodemon src/index.js"
+  },
+Con el fin de poder ejecur nodemon por terminal y aque la instalacion no fue global si no solo para el proyecto
+PARA EJECUTAR
+npm run dev
